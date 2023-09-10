@@ -1,0 +1,228 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* navbar section */
+.navbar {
+    display: flex;
+    position:relative;
+    left: 80px;
+    top: 25px;
+}
+
+.navbar div {
+    display: flex;
+}
+
+.navbar div span {
+    color: rgb(245, 71, 72);
+}
+
+.navbar ul {
+    display: flex;
+    position: relative;
+    left: 700px;
+}
+.navbar li {
+    list-style: none;
+    padding: 2px 80px;
+    font-weight: bold;
+    display: flex;
+    margin-left: -120px;
+    
+}
+
+.navbar li a {
+    text-decoration: none;
+    position: relative;
+    color: grey;
+    font-size: 14px;
+    display: flex;
+}
+
+#signup {
+    color: rgb(251, 179, 179);
+}
+
+#plane{
+position:relative;
+width: 120px;
+height: 100px;
+margin-top: -10px;
+margin-left: -70px;
+}
+
+/* content section */
+.content {
+    position: relative;
+    top: 150px;
+    left: 110px;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin: 13px;
+    position: relative;
+    right: 13px;
+    color: rgb(46, 46, 46);
+}
+
+.content p {
+    color: rgb(103, 103, 103);
+    margin: 5px;
+}
+
+.content span {
+    color: rgb(245, 71, 72);
+}
+
+.trynow {
+    display: flex;
+    position: relative;
+}
+
+.trynow img {
+    position: relative;
+    left: 130px;
+    top: 10px;
+}
+
+/* Content buttons*/
+#faster {
+    color: red;
+    background-color: rgb(250, 233, 233);
+    padding: 9px 20px;
+    border-radius: 18px;
+    border: 2px solid rgb(250, 233, 233);
+    cursor: pointer;
+}
+
+#trynow {
+    color: white;
+    background-color: rgb(248, 96, 97);
+    border: 2px solid rgb(248, 96, 97);
+    position: absolute;
+    top: 40px;
+    left: 6px;
+    padding: 18px 35px;
+    font-size: 18px;
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+/* image code section */
+#person {
+    position: absolute;
+    left: 710px;
+    bottom: -20px;
+    width: 47%;
+}
+
+/* First Section */
+/* Heading Code */
+#first-sec {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 700px;
+    background-color: rgb(252, 242, 242);
+}
+
+.works {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+}
+
+.works h1 {
+    margin: 4px;
+    font-size: 35px;
+    color: rgb(46, 46, 46);
+
+}
+
+.works h4 {
+    margin-bottom: 4px;
+    color: rgb(245, 71, 72);
+    font-size: 15px;
+
+}
+
+/* Card Section */
+.cards {
+    display: flex;
+    position: relative;
+    top: 130px;
+    justify-content: center;
+    align-items: center;
+}
+
+.items {
+    /* border: 2px solid red; */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    width: 250px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+/* item1 section */
+#item1 h1 {
+    position: relative;
+    bottom: 48px;
+}
+
+#item1 p {
+    position: relative;
+    bottom: 48px;
+}
+
+.items h1 {
+    font-size: 20px;
+}
+
+.items p {
+    font-size: 20px;
+    color: rgb(131, 131, 131);
+    margin: 4px;
+    font-size: 12px;
+}
+
+#lock {
+    position: relative;
+    top: 60px;
+}
+
+#hand {
+    position: relative;
+    right: 10px;
+    bottom: 18px;
+}
+
+/* item 2 section */
+#item2 {
+    box-shadow: 17px 17px rgb(249, 104, 104);
+
+}
+
+#subtract2 {
+    position: relative;
+    left: 25px;
+}
+
+#subtract1 {
+    position: relative;
+    right: 30px;
+    bottom: 25px;
+}

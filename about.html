@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Navbar section */
+        .navbar {
+            display: flex;
+            position: absolute;
+            left: 80px;
+            top: 25px;
+        }
+
+        #plane {
+            position: relative;
+            width: 100px;
+            margin-left: -50px;
+            margin-bottom: 20px;
+        }
+
+        .navbar div {
+            display: flex;
+        }
+
+        .navbar div span {
+            color: rgb(245, 71, 72);
+        }
+
+        .navbar ul {
+            display: flex;
+            position: relative;
+            left: 700px;
+        }
+
+        .navbar li {
+            list-style: none;
+            padding: 2px 12px;
+            font-weight: bold;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: grey;
+            font-size: 14px;
+        }
+
+        #signup {
+            color: rgb(251, 179, 179);
+        }
+
+        /* Content section */
+        .parent {
+            position: absolute;
+            top: 150px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+        }
+
+        .collabtalk {
+            display: flex;
+        }
+
+        .collabtalk div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 25px;
+        }
+
+        .collabtalk span {
+            color: rgb(229, 53, 54);
+        }
+
+        .collabtalk img {
+            width: 33%;
+        }
+
+        .collabtalk h1 {
+            margin: 3px;
+        }
+
+        #myheading2 {
+            font-size: 70px;
+        }
+
+        #myheading1 {
+            font-size: 35px;
+        }
+
+        #textarea {
+            border-radius: 25px;
+            padding: 20px 40px;
+            font-size: 15px;
+            color: rgb(192, 190, 190);
+            font-weight: bold;
+            background-color: rgb(253, 236, 236);
+            border: 2px solid rgb(253, 236, 236);
+            position: relative;
+            top: 10px;
+        }
+
+        /* yourlink section */
+        .yourlink {
+            position: relative;
+            top: 800px;
+            left: 280px;
+            display: flex;
+        }
+
+        .yourlink p {
+            text-align: center;
+            width: 100%;
+        }
+
+        .topic {
+            padding: 20px 45px;
+            display: grid;
+            grid-gap: 2px;
+            grid-template-rows: repeat(2, 50px);
+            border: 2px solid gray;
+            width: 350px;
+            height: 170px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px
+        }
+
+        .item input {
+            width: 300px;
+            height: 37px;
+            border-radius: 17px;
+            background-color: rgb(253, 236, 236);
+            border: 2px solid rgb(253, 236, 236);
+            padding: 2px 12px;
+            border-radius: 17px;
+            font-weight: bold;
+        }
+
+        .length {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 115px;
+            top: 25px;
+        }
+
+        .length input {
+            height: 37px;
+            background-color: rgb(253, 236, 236);
+            border: 2px solid rgb(253, 236, 236);
+            padding: 2px 15px;
+            border-radius: 17px;
+            font-weight: bold;
+            width: 150px;
+            margin-top: 8px;
+
+        }
+
+        .podcast {
+            display: flex;
+            width: 100%;
+        }
+
+        .length label {
+            font-size: 14px;
+            color: rgb(192, 190, 190);
+            position: relative;
+            left: 6px;
+        }
+
+        #plane2 {
+            position: relative;
+            bottom: 76px;
+            left: 50px;
+            width: 400px;
+        }
+
+        #arrow {
+            position: absolute;
+            right: 400px;
+            bottom: 295px;
+            z-index: -1;
+        }
+
+        /* CSS Grid Section */
+        .grid {
+            position: absolute;
+            height: 100%;
+            width: 80%;
+            /* border: 2px solid red; */
+            top: 1050px;
+            left: 200px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: grid;
+            margin-top: 20px;
+        }
+
+        .grid-items {
+            display: flex;
+            flex-direction: column;
+            padding-left: 90px;
+        }
+
+        .grid-items label {
+            font-size: 14px;
+            color: rgb(192, 190, 190);
+            position: relative;
+            left: 6px;
+        }
+
+        .grid-items input {
+            height: 37px;
+            background-color: rgb(253, 236, 236);
+            border: 2px solid rgb(253, 236, 236);
+            padding: 2px 15px;
+            border-radius: 17px;
+            font-weight: bold;
+            width: 150px;
+            margin-top: 8px;
+        }
+
+        /* Last Section */
+        .lastsection {
+            position: absolute;
+            /* border: 2px solid red; */
+            display: flex;
+            top: 1700px;
+            left: 200px;
+        }
+
+        .lastsection img {
+            position: relative;
+            z-index: -1;
+            bottom: 100px;
+            right: 20px;
+            width: 260px
+        }
+
+        .lastsection p {
+            color: rgb(103, 103, 103);
+            margin: 5px;
+            position: relative;
+            right: 20px;
+        }
+
+        /* last section button */
+        #generate {
+            color: white;
+            background-color: rgb(248, 96, 97);
+            border: 2px solid rgb(248, 96, 97);
+            padding: 18px 35px;
+            font-size: 18px;
+            border-radius: 11px;
+            cursor: pointer;
+            position: relative;
+            top: 100px;
+            right: 290px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <!-- Navbar code -->
+            <nav class="navbar">
+                <div>
+                    <img src="rocket.jpg" alt="no img" id="plane">
+                    <h3>Collab<span>Talk.ai</span></h3>
+                </div>
+                <ul>
+                    <li><a target="_blank" id="signup" href="/index.html">Logout</a></li>
+                    <li><a target="_blank" href="/about.html">About</a></li>
+                    <li><a target="_blank" href="/contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="parent">
+            <div class="collabtalk">
+                <img id="mic" src="mic.jpg" alt="no img">
+                <div>
+                    <h1 id="myheading1">Collab<span>Talk.ai</span></h1>
+                    <h1 id="myheading2"><span>Get </span>Started</h1>
+                </div>
+            </div>
+            <form action="noaction.php">
+                <textarea name="textarea" id="textarea" cols="90" rows="16">Your Script</textarea>
+            </form>
+            <p>OR</p>
+        </div>
+        <div class="yourlink">
+            <div class="topic">
+                <div class="item">
+                    <input placeholder="Your Link" type="text">
+                </div>
+                <p>OR</p>
+                <div class="item">
+                    <input placeholder="Your Topic" type="text">
+                </div>
+            </div>
+            <div class="podcast">
+                <div class="length">
+                    <label for="minutes">Length of your podcast</label>
+                    <input placeholder="Minutes" type="text" name="minutes" id="minutes">
+                </div>
+                <img id="plane2" src="img1.jpg" alt="no img">
+                <img id="arrow" src="arrow.jpg" alt="no img">
+            </div>
+        </div>
+        <div class="grid">
+            <div class="grid-items">
+                <label for="label1">Speaker 1</label>
+                <input placeholder="Name" type="text" id="label1">
+            </div>
+            <div class="grid-items">
+                <label for="label2">Speaker 2</label>
+                <input placeholder="Name" type="text" id="label2">
+            </div>
+            <div class="grid-items">
+                <label for="label3">Speaker 3(Optional)</label>
+                <input placeholder="Name" type="text" id="label3">
+            </div>
+            <div class="grid-items">
+                <label for="label4">Gender (optional)</label>
+                <input placeholder="Female" type="text" id="label4">
+            </div>
+            <div class="grid-items">
+                <label for="label5">Gender (optional)</label>
+                <input placeholder="Male" type="text" id="label5">
+            </div>
+            <div class="grid-items">
+                <label for="label6">Gender (optional)</label>
+                <input placeholder="Male" type="text" id="label6">
+            </div>
+            <div class="grid-items">
+                <label for="label7">Age (optional)</label>
+                <input placeholder="young" type="text" id="label7">
+            </div>
+            <div class="grid-items">
+                <label for="label8">Age (optional)</label>
+                <input placeholder="old" type="text" id="label8">
+            </div>
+            <div class="grid-items">
+                <label for="label9">Age (optional)</label>
+                <input placeholder="middle aged..." type="text" id="label9">
+            </div>
+            <div class="grid-items">
+                <label for="label10">Accent (optional)</label>
+                <input placeholder="american" type="text" id="label10">
+            </div>
+            <div class="grid-items">
+                <label for="label11">Accent (optional)</label>
+                <input placeholder="australian" type="text" id="label11">
+            </div>
+            <div class="grid-items">
+                <label for="label12">Accent (optional)</label>
+                <input placeholder="british" type="text" id="label12">
+            </div>
+        </div>
+        <div class="lastsection">
+            <img id="cartoon" src="cartoon.jpg" alt="no img">
+            <div class="h1">
+                <p>Generate conversational podcasts using your</p>
+                <p>favorite medium article or simply by giving a topic.</p>
+            </div>
+            <div class="btn">
+                <button id="generate">Generate</button>
+            </div>
+        </div>
+
+</body>
+
+</html>
